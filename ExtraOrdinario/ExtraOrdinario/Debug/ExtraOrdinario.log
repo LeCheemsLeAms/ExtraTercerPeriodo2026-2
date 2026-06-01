@@ -1,0 +1,29 @@
+﻿  Main.cpp
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(143,9): warning C4005: 'MAX_FRAMES': macro redefinition
+      D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(49,9):
+      see previous definition of 'MAX_FRAMES'
+  
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(324,24): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(388,21): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(388,21): warning C4244:         with
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(388,21): warning C4244:         [
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(388,21): warning C4244:             T=float
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(388,21): warning C4244:         ]
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(389,21): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(389,21): warning C4244:         with
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(389,21): warning C4244:         [
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(389,21): warning C4244:             T=float
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(389,21): warning C4244:         ]
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(390,21): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(390,21): warning C4244:         with
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(390,21): warning C4244:         [
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(390,21): warning C4244:             T=float
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(390,21): warning C4244:         ]
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(597,10): warning C4566: character represented by universal-character-name '\uFFFD' cannot be represented in the current code page (1252)
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(623,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(624,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(628,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(629,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(631,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\ExtraOrdinario\Main.cpp(632,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+  ExtraOrdinario.vcxproj -> D:\UNAM\ProfesorComputoGráfico\ExtraTercerPeriodo2026-2\ExtraOrdinario\Debug\ExtraOrdinario.exe
