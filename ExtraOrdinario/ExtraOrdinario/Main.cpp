@@ -338,10 +338,6 @@ int main()
 
 
 		// Clear the colorbuffer
-		/*glClearColor(0.1f, 0.1f, 0.1f, 1.0f);*/
-		glm::vec3 daySky = glm::vec3(0.1f, 0.1f, 0.1f);
-		glm::vec3 skyColor = daySky;
-		glClearColor(skyColor.r, skyColor.g, skyColor.b, 0.5f);
 
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -351,9 +347,10 @@ int main()
 
 		glm::mat4 modelTemp = glm::mat4(1.0f); //Temp
 
-
+		
 		// Use corresponding shader when setting uniforms/drawing objects
 		lightingShader.Use();
+
 
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "diffuse"), 0);
 		//glUniform1i(glGetUniformLocation(lightingShader.Program, "specular"),1);
@@ -363,8 +360,7 @@ int main()
 
 		// === Directional light (sun/moon) ===
 		// Sunlight color shifts: warm orange near horizon, white at noon
-		glm::vec3 noonColor = glm::vec3(1.0f, 0.97f, 0.9f);   // bright daylight
-		glm::vec3 sunsetColor = glm::vec3(1.0f, 0.0f, 0.0f);    // warm orange/red
+		glm::vec3 noonColor = glm::vec3(0.1f, 0.1f, 0.1f);   // bright daylight
 
 		glm::vec3 sunColor = noonColor;
 
@@ -383,35 +379,9 @@ int main()
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.specular"), specular.x, specular.y, specular.z);
 
 
-		// Point light 1
-		glm::vec3 lightColor;
-		lightColor.x = abs(sin(glfwGetTime() * Light1.x));
-		lightColor.y = abs(sin(glfwGetTime() * Light1.y));
-		lightColor.z = sin(glfwGetTime() * Light1.z);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].position"), sunPosition.x, sunPosition.y, sunPosition.z);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].ambient"), sunColor.x * dayFactor, sunColor.y * dayFactor, sunColor.z * dayFactor);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].diffuse"), sunColor.x * dayFactor, sunColor.y * dayFactor, sunColor.z * dayFactor);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].specular"), 1.0f, 0.9f, 0.7f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[0].constant"), 1.0f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[0].linear"), 0.014f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[0].quadratic"), 0.0007f);
-
-
-		// SpotLight
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLight.position"), camera.GetPosition().x, camera.GetPosition().y, camera.GetPosition().z);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLight.direction"), camera.GetFront().x, camera.GetFront().y, camera.GetFront().z);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLight.ambient"), 0.0f, 0.0f, 0.0f);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLight.diffuse"), 0.0f, 0.0f, 0.0f);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLight.specular"), 0.0f, 0.0f, 0.0f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "spotLight.constant"), 1.0f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "spotLight.linear"), 0.3f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "spotLight.quadratic"), 0.7f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "spotLight.cutOff"), glm::cos(glm::radians(12.0f)));
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "spotLight.outerCutOff"), glm::cos(glm::radians(18.0f)));
-
-
 		// Set material properties
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 5.0f);
+
 
 		// Create camera transformations
 		glm::mat4 view;
